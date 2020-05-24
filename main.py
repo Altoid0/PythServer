@@ -9,5 +9,9 @@ def index():
 def test():
     return render_template('test.html')
 
+@app.route('/welcome/<name>')
+def welcome(name):
+    return render_template('welcome_page.html', name=name)
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
