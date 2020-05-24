@@ -7,7 +7,7 @@ def index():
 
 @app.route('/test')
 def test():
-    return 'Test phrase!'
+    return render_template('test.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
