@@ -3,9 +3,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello world'
+    return render_template('index.html')
+
 @app.route('/test')
-def cakes():
+def test():
     return 'Test phrase!'
 
 if __name__ == '__main__':
