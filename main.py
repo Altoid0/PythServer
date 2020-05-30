@@ -18,6 +18,16 @@ def do_admin_login():
         flash('Wrong password!')
     return index()
 
+@app.route('/area', methods=['POST', 'GET'])
+def area():
+    if request.method == 'POST':
+        sideA = int(request.form['sidea'])
+        sideB = int(request.form['sideb'])
+        area = sideA * sideB
+        return render_template('area.html', area=area)
+    else:
+        return render_template('area.html')
+
 @app.route('/welcome/<name>')
 def welcome(name):
     if not session.get('logged_in'):
