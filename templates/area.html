@@ -4,14 +4,16 @@
     <head>
         <title>Reactagle Area</title>
     </head>
-    <div class="form">
-        <form action="/area" method="POST">
-            <input type="text" placeholder="Side A" name="sidea" id="sidea">
-            <input type="text" placeholder="Side B" name="sideb" id="sideb">
-            <input type="submit" value="Calculate Area" class="btn">
-        </form>
+    <div class="login-form">
+        <div class="form">
+            <form action="/area" method="POST">
+                <input type="text" placeholder="Side A" name="sidea" id="sidea">
+                <input type="text" placeholder="Side B" name="sideb" id="sideb">
+                <input type="submit" value="Calculate Area" class="btn">
+            </form>
+        </div>
     </div>
-    <p>
+    <p align="center">
         Calculated Area: {{ area }}
     </p>
 </html>
