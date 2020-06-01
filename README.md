@@ -1,6 +1,7 @@
 # PythServer
-Beginner Python server built on Flask
 
+Simple Python web server built with the Flask framework
+
+```
 Data Structures 1 Final Project
-
-Simple Python web server built with Flask, implementing labs that we learned throughout the year.
+```
