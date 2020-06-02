@@ -10,7 +10,7 @@ def index():
     else:
         return render_template('index.html')
 
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['POST', 'GET'])
 def do_admin_login():
     if request.form['password'] == 'password' and request.form['username'] == 'tanay':
         session['logged_in'] = True
