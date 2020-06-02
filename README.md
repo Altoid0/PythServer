@@ -14,3 +14,8 @@ Windows Based Systems
 ```bash
 pip3 install flask
 ```
+How to run the server
+```bash
+cd PythServer
+python main.py
+```
