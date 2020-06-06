@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="/static/style.css" />
     <head>
-        <title>Reactagle Area</title>
+        <link href="/static/style.css" rel="stylesheet">
+        <title>
+            Reactagle Area
+        </title>
     </head>
-    <div class="login-form">
-        <div class="form">
-            <form action="/area" method="POST">
-                <input type="text" placeholder="Side A" name="sidea">
-                <input type="text" placeholder="Side B" name="sideb">
-                <input type="submit" value="Calculate Area" class="btn btn-primary btn-large btn-block">
-            </form>
+    <body>
+        <div class="login-form">
+            <div class="form">
+                <form action="/area" method="post">
+                    <input name="sidea" placeholder="Side A" type="text"> <input name="sideb" placeholder="Side B" type="text">
+                    <input class="btn btn-primary btn-large btn-block" type="submit" value="Calculate Area">
+                </form>
+            </div>
         </div>
-    </div>
-    <p align="center">
-        Calculated Area: {{ area }}
-    </p>
+        <p align="center">
+            Calculated Area: {{ area }}
+        </p>
+    </body>
 </html>
